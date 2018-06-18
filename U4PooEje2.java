@@ -13,8 +13,8 @@ public class U4PooEje2 extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         etiquetaNomFlor = new javax.swing.JLabel();
         flores = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jBtnAceptar = new javax.swing.JButton();
+        jButtonSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Flores");
@@ -36,17 +36,17 @@ public class U4PooEje2 extends javax.swing.JFrame {
         flores.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         flores.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "rosa", "violeta", "clavel", "margarita", "orquidea" }));
 
-        jButton1.setText("Aceptar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jBtnAceptar.setText("Aceptar");
+        jBtnAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jBtnAceptarActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Salir");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButtonSalir.setText("Salir");
+        jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButtonSalirActionPerformed(evt);
             }
         });
 
@@ -56,9 +56,9 @@ public class U4PooEje2 extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(160, 160, 160)
-                .addComponent(jButton1)
+                .addComponent(jBtnAceptar)
                 .addGap(43, 43, 43)
-                .addComponent(jButton2)
+                .addComponent(jButtonSalir)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap(109, Short.MAX_VALUE)
@@ -76,8 +76,8 @@ public class U4PooEje2 extends javax.swing.JFrame {
                     .addComponent(etiquetaNomFlor, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 243, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(jBtnAceptar)
+                    .addComponent(jButtonSalir))
                 .addGap(57, 57, 57))
         );
 
@@ -101,13 +101,13 @@ public class U4PooEje2 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
         System.exit(0);// TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonSalirActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jBtnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAceptarActionPerformed
         setTitle(flores.getSelectedItem().toString());
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jBtnAceptarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,8 +147,8 @@ public class U4PooEje2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel etiquetaNomFlor;
     private javax.swing.JComboBox<String> flores;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jBtnAceptar;
+    private javax.swing.JButton jButtonSalir;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
